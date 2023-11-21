@@ -6,6 +6,7 @@ MergeSort m1;
 vector<int> arr_check = { 4, 6, 8, 11, 12, 17, 22 };
 vector<int> arr_check2 = { -22, -17, -12, -11, -8, -6, -4 };
 vector<int> arr_check3 = { -12, -11, -8, -4, 6, 17, 22 };
+vector<int> arr_check4 = { 314 };
 
 vector<int> arr = {};
 
@@ -42,4 +43,10 @@ TEST(Merge_sort_test, TestPositiveAndNegativeNumbersArray) {
 TEST(Merge_sort_test, TestEmptyArray) {
     arr = {};
     ASSERT_NO_THROW(m1.sort(arr));
+}
+
+TEST(Merge_sort_test, TestSingleElementArray) {
+    arr = { 314 };
+    m1.sort(arr);
+    EXPECT_EQ(arr, arr_check4);
 }
