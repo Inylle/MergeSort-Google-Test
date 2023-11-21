@@ -89,3 +89,18 @@ TEST(Merge_sort_test, TestOver100ElementsArray) {
     m1.sort(arr);
     EXPECT_EQ(arr, arr_check9);
 }
+
+TEST(Merge_sort_test, TestOver100ElementsDuplicateNegativeArray) {
+    arr_check9 = {};
+    arr = {};
+    for (int i = -50; i < 100; i++) {
+        if (i % 2 == 0) {
+            arr.push_back(i - 1);
+            arr_check9.push_back(i - 1);
+        }
+        arr.push_back(i);
+        arr_check9.push_back(i);
+    }
+    m1.sort(arr);
+    EXPECT_EQ(arr, arr_check9);
+}
