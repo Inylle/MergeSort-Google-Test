@@ -18,3 +18,9 @@ TEST(Merge_sort_test, TestReverseSortedArray) {
     m1.sort(arr);
     EXPECT_EQ(arr, arr_check);
 }
+
+TEST(Merge_sort_test, TestRandomNumberInsertedArray) {
+    arr = { 6, 11, 17, 4, 8, 12, 22 };
+    m1.sort(arr);
+    EXPECT_EQ(arr, arr_check);
+}
