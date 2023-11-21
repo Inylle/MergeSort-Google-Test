@@ -8,6 +8,7 @@ vector<int> arr_check2 = { -22, -17, -12, -11, -8, -6, -4 };
 vector<int> arr_check3 = { -12, -11, -8, -4, 6, 17, 22 };
 vector<int> arr_check4 = { 314 };
 vector<int> arr_check5 = { 4, 4, 11, 11, 13, 13, 17, 17 };
+vector<int> arr_check6 = { -17, -17, -13, -13, -11, -11, -4, -4 };
 
 vector<int> arr = {};
 
@@ -56,4 +57,10 @@ TEST(Merge_sort_test, TestDuplicateArray) {
     arr = { 17, 4, 11, 13, 13, 11, 4, 17 };
     m1.sort(arr);
     EXPECT_EQ(arr, arr_check5);
+}
+
+TEST(Merge_sort_test, TestNegativeDuplicateArray) {
+    arr = { -17, -4, -11, -13, -13, -11, -4, -17 };
+    m1.sort(arr);
+    EXPECT_EQ(arr, arr_check6);
 }
