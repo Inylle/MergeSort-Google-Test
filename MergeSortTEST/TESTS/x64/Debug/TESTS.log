@@ -1,0 +1,5 @@
+﻿  test.cpp
+C:\Users\Inylle\Desktop\Homework\MergeSort\MergeSortTEST\TESTS\MergeSort.h(17,42): warning C4267: "argument": konwersja z "size_t" do "int", możliwa utrata danych
+  (kompilowanie pliku źródłowego „/test.cpp”)
+  
+  TESTS.vcxproj -> C:\Users\Inylle\Desktop\Homework\MergeSort\MergeSortTEST\TESTS\x64\Debug\TESTS.exe

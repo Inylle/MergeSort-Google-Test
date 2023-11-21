@@ -1,0 +1,4 @@
+C:\Users\Inylle\Desktop\Homework\MergeSort\MergeSortTEST\TESTS\x64\Debug\TESTS.vcxproj.CopyComplete
+C:\Users\Inylle\Desktop\Homework\MergeSort\MergeSortTEST\TESTS\x64\Debug\TESTS.exe
+C:\Users\Inylle\Desktop\Homework\MergeSort\MergeSortTEST\TESTS\x64\Debug\gtest.pdb
+C:\Users\Inylle\Desktop\Homework\MergeSort\MergeSortTEST\TESTS\x64\Debug\gtest_main.pdb
