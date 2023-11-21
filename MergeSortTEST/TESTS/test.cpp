@@ -11,6 +11,7 @@ vector<int> arr_check5 = { 4, 4, 11, 11, 13, 13, 17, 17 };
 vector<int> arr_check6 = { -17, -17, -13, -13, -11, -11, -4, -4 };
 vector<int> arr_check7 = { -13, -13, -11, -11, 4, 4, 17, 17, };
 vector<int> arr_check8 = { 3, 14 };
+vector<int> arr_check9 = {};
 
 vector<int> arr = {};
 
@@ -77,4 +78,14 @@ TEST(Merge_sort_test, TestDualElementArray) {
     arr = { 3, 14 };
     m1.sort(arr);
     EXPECT_EQ(arr, arr_check8);
+}
+
+TEST(Merge_sort_test, TestOver100ElementsArray) {
+    arr = {};
+    for (int i = 0; i < 150; i++) {
+        arr.push_back(i);
+        arr_check9.push_back(i);
+    }
+    m1.sort(arr);
+    EXPECT_EQ(arr, arr_check9);
 }
