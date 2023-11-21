@@ -38,3 +38,8 @@ TEST(Merge_sort_test, TestPositiveAndNegativeNumbersArray) {
     m1.sort(arr);
     EXPECT_EQ(arr, arr_check3);
 }
+
+TEST(Merge_sort_test, TestEmptyArray) {
+    arr = {};
+    ASSERT_NO_THROW(m1.sort(arr));
+}
